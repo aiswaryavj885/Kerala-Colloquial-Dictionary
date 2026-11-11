@@ -214,15 +214,15 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({
                         <span className="font-semibold text-emerald-950">Example:</span>{' '}
                         <span className="font-malayalam italic">"{word.exampleSentenceMl}"</span>
                       </div>
-                      {word.audioDataUrl && (
-                        <div className="pt-1">
-                          <AudioPlayerButton
-                            audioUrl={word.audioDataUrl}
-                            speakerName={word.audioSpeakerName}
-                            speakerLocation={word.audioSpeakerLocation}
-                          />
-                        </div>
-                      )}
+                      <div className="pt-1">
+                        <AudioPlayerButton
+                          audioUrl={word.audioDataUrl}
+                          wordMl={word.wordMl}
+                          wordManglish={word.wordManglish}
+                          speakerName={word.audioSpeakerName}
+                          speakerLocation={word.audioSpeakerLocation}
+                        />
+                      </div>
                       <div className="text-[11px] text-stone-400 pt-1">
                         Submitted by: {word.submittedBy.name} ({word.submittedBy.district || 'Kerala'})
                       </div>

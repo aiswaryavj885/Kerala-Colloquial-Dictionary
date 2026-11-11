@@ -301,6 +301,7 @@ export const WordSubmissionModal: React.FC<WordSubmissionModalProps> = ({
                   setAudioDurationSeconds(undefined);
                 }}
                 existingAudioUrl={audioDataUrl}
+                wordText={wordMl || wordManglish}
               />
 
               {/* Speaker & Contributor Info */}

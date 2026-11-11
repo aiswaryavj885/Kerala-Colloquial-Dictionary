@@ -95,14 +95,14 @@ export const WordCard: React.FC<WordCardProps> = ({
             ({word.wordManglish})
           </span>
 
-          {word.audioDataUrl && (
-            <AudioPlayerButton
-              audioUrl={word.audioDataUrl}
-              speakerName={word.audioSpeakerName}
-              speakerLocation={word.audioSpeakerLocation}
-              compact
-            />
-          )}
+          <AudioPlayerButton
+            audioUrl={word.audioDataUrl}
+            wordMl={word.wordMl}
+            wordManglish={word.wordManglish}
+            speakerName={word.audioSpeakerName}
+            speakerLocation={word.audioSpeakerLocation}
+            compact
+          />
         </div>
 
         {/* Meaning in English and Malayalam */}

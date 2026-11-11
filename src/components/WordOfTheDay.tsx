@@ -75,14 +75,14 @@ export const WordOfTheDay: React.FC<WordOfTheDayProps> = ({
                 <span className="text-xl sm:text-2xl font-semibold text-amber-400 font-serif-kerala">
                   "{featuredWord.wordManglish}"
                 </span>
-                {featuredWord.audioDataUrl && (
-                  <AudioPlayerButton
-                    audioUrl={featuredWord.audioDataUrl}
-                    speakerName={featuredWord.audioSpeakerName}
-                    speakerLocation={featuredWord.audioSpeakerLocation}
-                    compact
-                  />
-                )}
+                <AudioPlayerButton
+                  audioUrl={featuredWord.audioDataUrl}
+                  wordMl={featuredWord.wordMl}
+                  wordManglish={featuredWord.wordManglish}
+                  speakerName={featuredWord.audioSpeakerName}
+                  speakerLocation={featuredWord.audioSpeakerLocation}
+                  compact
+                />
               </div>
 
               <div className="flex flex-wrap items-center gap-2">
