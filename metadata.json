@@ -1,0 +1,6 @@
+{
+  "name": "Naadan Vakkukal - Malayalam Colloquial Dictionary",
+  "description": "Kerala-inspired regional Malayalam colloquial dictionary covering all 14 districts with interactive map, multi-script search, audio pronunciations, dialect comparisons, and community submissions.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

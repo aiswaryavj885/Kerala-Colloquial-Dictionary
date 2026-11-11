@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #FAF8F5;
+    color: #1F2937;
+    margin: 0;
+  }
+
+  .font-malayalam {
+    font-family: 'Anek Malayalam', system-ui, sans-serif;
+  }
+
+  .font-serif-kerala {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Kasavu Gold Border Effect */
+.kasavu-border {
+  border-bottom: 3px double #D97706;
+  position: relative;
+}
+
+.kasavu-gold-strip {
+  background: linear-gradient(90deg, #B45309 0%, #F59E0B 25%, #FDE68A 50%, #F59E0B 75%, #B45309 100%);
+}
+
+.kasavu-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  position: relative;
+  overflow: hidden;
+}
+
+.kasavu-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #047857 0%, #D97706 50%, #047857 100%);
+}
+
+/* Custom scrollbar for word list */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F4F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
